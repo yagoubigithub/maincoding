@@ -1,0 +1,22 @@
+.subTitle{
+   padding: 15px;
+}
+.tryit_link{
+    font-family: arial !important;
+    padding: 12px 16px !important;
+    background-color: #111 !important;
+    color: #fff !important;
+    margin: 15px !important;
+}
+.tryit_link:hover{
+    background-color: #333 !important;   
+}
+.exampleCard{
+    margin-top : 15px !important;
+    padding: 5px !important;
+    background-color: #f4f4f4 !important;
+}
+.codeBlock p{
+    padding : 0;
+    margin : 0;
+}
