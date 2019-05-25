@@ -9,8 +9,7 @@ import {
   Dialog,
   Paper
 } from "@material-ui/core";
-import green from "@material-ui/core/colors/green";
-import html5Logo from "../../assetes/images/html5.svg";
+
 import "./html_style.css";
 import LinkIcon from "@material-ui/icons/Link";
 import TryHtml from "./TryHtml";
@@ -138,16 +137,7 @@ class HTML5_INTRO extends Component {
 
           {this.props.next !== "" ? (
             <NavLink
-               style={{
-                float: "right",
-                color: "#fff",
-                fontWeight: "bolder",
-                fontSize: 30,
-                textDecoration: "none",
-                backgroundColor  :"#1A73E8",
-                padding : "7px 20px",
-                marginBottom : 15
-              }}
+               className={"stepLink next"}
               to={"/html/" + this.props.next}
             >
               الدرس التالي
@@ -156,16 +146,7 @@ class HTML5_INTRO extends Component {
 
           {this.props.prev !== "" ? (
             <NavLink
-              style={{
-                float: "left",
-                color: "#fff",
-                fontWeight: "bolder",
-                fontSize: 30,
-                textDecoration: "none",
-                backgroundColor  :"#1A73E8",
-                padding : "7px 20px",
-                marginBottom : 15
-              }}
+              className={"stepLink  prev"}
               to={"/html/" + this.props.prev}
             >
              الدرس السابق

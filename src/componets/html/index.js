@@ -15,6 +15,9 @@ import "./html_style.css";
 import TryHtml from "./TryHtml";
 import lamp from '../../assetes/images/lamp.jpg';
 import { NavLink } from "react-router-dom";
+
+import {Helmet} from "react-helmet";
+
 class HTML5_HOME extends Component {
   state = {
     openTry : false
@@ -167,16 +170,7 @@ class HTML5_HOME extends Component {
           </CardContent>
           {this.props.next !== "" ? (
             <NavLink
-               style={{
-                float: "right",
-                color: "#fff",
-                fontWeight: "bolder",
-                fontSize: 30,
-                textDecoration: "none",
-                backgroundColor  :"#1A73E8",
-                padding : "7px 20px",
-                marginBottom : 15
-              }}
+               className={"stepLink next"}
               to={"/html/" + this.props.next}
             >
               الدرس التالي
@@ -185,22 +179,22 @@ class HTML5_HOME extends Component {
 
           {this.props.prev !== "" ? (
             <NavLink
-              style={{
-                float: "left",
-                color: "#fff",
-                fontWeight: "bolder",
-                fontSize: 30,
-                textDecoration: "none",
-                backgroundColor  :"#1A73E8",
-                padding : "7px 20px",
-                marginBottom : 15
-              }}
+            className={"stepLink prev"}
               to={"/html/" + this.props.prev}
             >
              الدرس السابق
             </NavLink>
           ) : null}
         </Card>
+
+        <Helmet>
+        <meta name="keywords" content="HTML,HTML5,HTML5 tutorial,دروس html,انشاء موقع" />
+      <meta
+        name="description"
+        content=" دروس html5 html  للمبتدئين"
+      />
+      <title>Home Html</title>
+        </Helmet>
       </React.Fragment>
     );
   }

@@ -10,6 +10,8 @@ import My404Component from "./My404Component";
 import { Switch, Route } from "react-router-dom";
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import Footer from "./componets/footer";
+import BASIC_ELEMENTS from "./componets/html/basic_elemnts";
 
 const styles = {
   root: {
@@ -26,7 +28,8 @@ class HTML extends Component {
 
   mapList = [
     { label: "HTML HOME", to: "home", component: <HTML5_HOME next="intro" prev="" /> },
-    { label: "مقدمة في HTML 5", to: "intro", component: <HTML5_INTRO next="" prev="home" /> }
+    { label: "مقدمة في HTML 5", to: "intro", component: <HTML5_INTRO next="basic_elements" prev="home" /> },
+    { label: "العناصر الاساسية للصفحة الويب", to: "basic_elements", component: <BASIC_ELEMENTS next="" prev="intro" /> }
     
   ];
  
@@ -67,7 +70,7 @@ class HTML extends Component {
           </Grid>
 
         </Grid>
-       
+        <Footer />
        
       </div>
     );
