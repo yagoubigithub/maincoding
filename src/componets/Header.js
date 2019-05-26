@@ -48,7 +48,7 @@ class Header extends Component {
             {/*sidelist map*/}
             {this.props.mapList.map((item, index) => {
               return (
-                <NavLink   to={"/" + this.props.tuto + "/" + item.to} key={index}>
+                <NavLink dir="rtl" className={"mapLink"}   to={"/" + this.props.tuto + "/" + item.to} key={index}>
                   {item.label}
                 </NavLink>
               );

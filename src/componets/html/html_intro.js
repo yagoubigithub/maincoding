@@ -10,6 +10,7 @@ import {
   Paper
 } from "@material-ui/core";
 
+import {Helmet} from "react-helmet";
 import "./html_style.css";
 import LinkIcon from "@material-ui/icons/Link";
 import TryHtml from "./TryHtml";
@@ -153,6 +154,15 @@ class HTML5_INTRO extends Component {
             </NavLink>
           ) : null}
         </Card>
+
+        <Helmet>
+        <meta name="keywords" content="HTML,HTML5,HTML5 tutorial,دروس html,انشاء موقع , html,طريقة تنزيل وتثبيث  visual studoi code" />
+      <meta
+        name="description"
+        content=" طريقة تنزيل visual studio code :  دروس html5 html  للمبتدئين"
+      />
+      <title>محرر الاكواد html</title>
+        </Helmet>
       </React.Fragment>
     );
   }

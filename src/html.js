@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import Header from "./componets/Header";
 import Grid from "@material-ui/core/Grid";
-import { Hidden, MobileStepper, Button } from "@material-ui/core";
+import { Hidden} from "@material-ui/core";
 import { withStyles } from '@material-ui/core/styles';
 
 import HTML5_INTRO from "./componets/html/html_intro";
 import HTML5_HOME from "./componets/html/index";
 import My404Component from "./My404Component";
 import { Switch, Route } from "react-router-dom";
-import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
-import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+
 import Footer from "./componets/footer";
 import BASIC_ELEMENTS from "./componets/html/basic_elemnts";
 
@@ -28,7 +27,7 @@ class HTML extends Component {
 
   mapList = [
     { label: "HTML HOME", to: "home", component: <HTML5_HOME next="intro" prev="" /> },
-    { label: "مقدمة في HTML 5", to: "intro", component: <HTML5_INTRO next="basic_elements" prev="home" /> },
+    { label: "محرر الاكواد", to: "intro", component: <HTML5_INTRO next="basic_elements" prev="home" /> },
     { label: "العناصر الاساسية للصفحة الويب", to: "basic_elements", component: <BASIC_ELEMENTS next="" prev="intro" /> }
     
   ];
