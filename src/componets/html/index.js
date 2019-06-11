@@ -77,16 +77,25 @@ class HTML5_HOME extends Component {
           
         >
           <TryHtml code="<!DOCTYPE html>
+
 <html>
+
 <head>
-<title>Page Title</title>
+
+<title>عنوان الصفحة</title>
+
 </head>
+
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+
+<h1>عنوان كبير تصنيف 1</h1>
+
+<p>فقرة</p>
+
 
 </body>
+
 </html>"  handleCloseTry={this.handleCloseTry} />
         </Dialog>
 
@@ -116,6 +125,10 @@ class HTML5_HOME extends Component {
               </Typography>
               <Typography variant="title">
                 لغة HTML هي لغة سهلة التعلم بل هي الاسهل
+              </Typography>
+              <Typography variant="title">
+              كل كود  HTML  ياتي على هذا الشكل
+ : {"<العنصر>"}محتوى العنصر{"</العنصر>"}
               </Typography>
             </Card>
             <br />
@@ -155,7 +168,7 @@ class HTML5_HOME extends Component {
                
                 <br></br>
                 <p>{this.closeHtmlTag( "body", "brown")}</p>
-                <p>{this.closeHtmlTag( "head", "brown")}</p>
+               
                 <p>{this.closeHtmlTag( "html", "brown")}</p>
               </code>
                

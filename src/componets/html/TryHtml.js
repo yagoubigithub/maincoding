@@ -14,6 +14,7 @@ class TryHtml extends Component {
     this.if_rame.setAttribute("srcdoc", this.props.code);
   }
   render() {
+    
     return (
       <React.Fragment>
         <Paper style={{ width: "100%" }}>
@@ -21,6 +22,7 @@ class TryHtml extends Component {
           <IconButton
             style={{ float: "right" }}
             onClick={this.props.handleCloseTry}
+            color="secondary"
           >
             <Close fontSize="large" />
           </IconButton>
