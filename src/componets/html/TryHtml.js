@@ -28,13 +28,14 @@ class TryHtml extends Component {
           </IconButton>
         </Paper>
         <Grid container>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} style={{border : "1px solid rgba(0,0,0,0.6)"}}>
             <AceEditor
               value={this.props.code}
               mode="html"
-              theme="monokai"
               onChange={this.handelChange}
               name="textarea"
+              
+              
               ref={input => {
                 this.text_area = input;
               }}
